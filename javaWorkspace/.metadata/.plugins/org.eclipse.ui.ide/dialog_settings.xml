@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\annie\Desktop\MovieImage"/>
+			<item value="C:\Users\annie\Downloads\join"/>
+			<item value="C:\Users\annie\Downloads\javaPrjInputPractice"/>
+			<item value="C:\Users\annie\Downloads\javaPrjLogin"/>
+			<item value="C:\Users\annie\Downloads\accountBook"/>
+			<item value="C:\Users\annie\Downloads\javaPrjIoHomework"/>
+			<item value="C:\Users\annie\Downloads\javaPrjPetapp"/>
+			<item value="C:\Users\annie\Downloads\maplemini"/>
+			<item value="C:\Users\annie\Downloads\homework220617"/>
+			<item value="C:\Users\annie\Downloads\javaGongcha"/>
+			<item value="C:\Users\annie\Downloads\JavaBank"/>
+			<item value="C:\Users\annie\Downloads\javaPlantPrj"/>
+			<item value="C:\Users\annie\Downloads\javaPrjGameMethod"/>
+			<item value="C:\Users\annie\Downloads\StudyCafe"/>
+			<item value="C:\Users\annie\Downloads\javaPrjGameRumi"/>
+			<item value="C:\Users\annie\Downloads\javaprj20"/>
+			<item value="C:\Users\annie\Downloads\javaPrjGameObject"/>
+			<item value="C:\Users\annie\Downloads\javaPrjhomework"/>
+			<item value="C:\Users\annie\Downloads\javaPrjTestLoop"/>
+			<item value="C:\Users\annie\Downloads\javaPrjloopif"/>
+			<item value="C:\Users\annie\Desktop\javaPrjGameIf"/>
+			<item value="C:\Users\annie\Downloads\playgame"/>
+			<item value="C:\Users\annie\Downloads\javaPrjGameEvent"/>
+			<item value="C:\Users\annie\Downloads\javaPrjGameEvent\src\event"/>
+			<item value="C:\dev\javaWorkspaceStudy\javaPrjGameIf"/>
+			<item value="C:\Users\annie\Downloads\javaPrjGameLoop1"/>
+			<item value="C:\Users\annie\Downloads\javaPrjGameFortune\src\fortune"/>
+			<item value="C:\Users\annie\Downloads\javaPrjGameFortune"/>
+			<item value="C:\Users\annie\Downloads\PracticeGame\src\practice"/>
+			<item value="C:\dev\javaWorkspaceStudy\javaPrjGameIf\src\main"/>
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1654129151547"/>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="621"/>
+		<item key="DIALOG_Y_ORIGIN" value="47"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="711"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="537"/>
+		<item key="DIALOG_Y_ORIGIN" value="209"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

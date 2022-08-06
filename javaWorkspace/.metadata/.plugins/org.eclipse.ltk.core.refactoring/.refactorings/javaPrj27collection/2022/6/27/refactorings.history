@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;collection.TestArrayList&apos; to &apos;TestList&apos;&#x0D;&#x0A;- Original project: &apos;javaPrj27collection&apos;&#x0D;&#x0A;- Original element: &apos;collection.TestArrayList&apos;&#x0D;&#x0A;- Renamed element: &apos;collection.TestList&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestArrayList&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;collection{TestArrayList.java[TestArrayList" matchStrategy="1" name="TestList" qualified="false" references="true" similarDeclarations="false" stamp="1656289741890" textual="false" version="1.0"/>
+</session>

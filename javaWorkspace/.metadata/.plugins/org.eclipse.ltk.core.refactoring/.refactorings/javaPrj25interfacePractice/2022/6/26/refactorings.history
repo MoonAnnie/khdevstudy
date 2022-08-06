@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Agumon.java&apos; to &apos;mob.Agumon.java&apos;&#x0D;&#x0A;- Original project: &apos;javaPrj25interfacePractice&apos;&#x0D;&#x0A;- Destination element: &apos;mob.Agumon.java&apos;&#x0D;&#x0A;- Original element: &apos;mob.Agumon.java&apos;" description="Copy compilation unit" destination="/src&lt;mob{Agumon.java" element1="/src&lt;mob{Agumon.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1656035000527" units="1" version="1.0"/>
+</session>
