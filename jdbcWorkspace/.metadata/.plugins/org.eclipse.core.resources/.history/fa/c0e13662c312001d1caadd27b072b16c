@@ -1,0 +1,19 @@
+package com.kh;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("===== 쓰레드 =====");
+		
+		//방법1
+		Thread x = new Thread( ()->{
+			for(int i = 1; i <= 10; ++i) {
+				System.out.println(i);
+			}
+		} );
+		
+		x.start();
+
+	}
+
+}

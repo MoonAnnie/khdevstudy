@@ -1,0 +1,33 @@
+package server;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("서버 실행 됨 ...");
+
+		//귀 만들기
+		ServerSocket ss = new ServerSocket(12345); //ss = serverSocket
+		
+		System.out.println("클라이언트의 연결 요청이 오기를 기다리는 중 ...");
+		
+		//ss.accept() : 귀로 들을 준비
+		Socket cs = ss.accept(); //cs = clientSocket 소켓은 종이컵
+		System.out.println("연결된 소켓 : " +cs.getInetAddress());
+		
+		InputStream in = cs.getInputStream();
+		InputStreamReader isr = new InputStreamReader(in);
+		
+		BufferedReader br = new BufferedReader(isr);
+		
+		String msg = br.readLine();
+		
+	}//main
+
+}//class

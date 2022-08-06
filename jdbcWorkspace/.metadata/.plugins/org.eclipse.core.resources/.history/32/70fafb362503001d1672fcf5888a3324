@@ -1,0 +1,37 @@
+package main;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+
+		System.out.println("===== JDBC TEST =====");
+		
+		//클래스 파일 준비
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		//접속 정보
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String id = "C##KH";
+		String pwd = "KH";
+		
+		Connection conn = DriverManager.getConnection(url, id, pwd); 
+		//getConnection 은 기울어졌기 때문에 static 의 메소드임 리턴타입은 커넥션 타입
+		
+		boolean result = conn.isClosed(); //연결이 잘 됐는지 확인하는 방법 -> 잘 됐으면 closed 가 아닐 것
+		System.out.println("커넥션 닫힘 ? " + result);
+		
+		Statement stmt = conn.createStatement();
+		
+		stmt.executeQuery("SELECT SYSDATE FROM DUAL"); //오늘 날짜 조회하는 SQL 작성
+		
+		
+		
+		
+		
+	}//main
+
+}//class

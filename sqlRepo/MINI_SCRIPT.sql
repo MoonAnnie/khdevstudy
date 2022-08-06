@@ -1,0 +1,74 @@
+-- MINI SCRIPT
+
+-----------------------------------------------------------------
+-- MEMBER
+-----------------------------------------------------------------
+DROP TABLE MEMBER CASCADE CONSTRAINTS; --CREATE 위에 항상 DROP 만들기 --앞으론 테이블 삭제 시 CASCADE CONSTRAINTS 넣기
+CREATE TABLE MEMBER(
+    NO NUMBER PRIMARY KEY
+    , ID VARCHAR2(100) NOT NULL UNIQUE
+    , PWD VARCHAR2(100) NOT NULL
+    , NICK VARCHAR2(100) NOT NULL
+    , ENROLL_DATE TIMESTAMP DEFAULT SYSDATE
+    , MODIFY_DATE TIMESTAMP DEFAULT SYSDATE
+    , QUIT_YN CHAR(1) DEFAULT 'N' CHECK( QUIT_YN IN('Y', 'N') ) NOT NULL
+);
+
+DROP SEQUENCE SEQ_MEMBER_NO;
+CREATE SEQUENCE SEQ_MEMBER_NO NOCACHE NOCYCLE;
+
+INSERT INTO MEMBER (NO, ID, PWD, NICK) VALUES(SEQ_MEMBER_NO.NEXTVAL, 'ADMIN', '1234', '관리자');
+COMMIT;
+
+-----------------------------------------------------------------
+-- BOARD
+-----------------------------------------------------------------
+
+--글 번호, 제목, 내용, 작성자 회원 번호, 작성일시, 수정일시, 상태
+DROP TABLE BOARD CASCADE CONSTRAINTS;  --다른 사람이 아래 테이블을 정상적으로 생성할 수 있기 위함
+CREATE TABLE BOARD (
+    NO NUMBER PRIMARY KEY
+    , TITLE VARCHAR2(100) NOT NULL 
+    , CONTENT VARCHAR2(100) NOT NULL
+    , WRITER_NO NUMBER NOT NULL
+    , ENROLL_DATE TIMESTAMP DEFAULT SYSDATE
+    , MODIFY_DATE TIMESTAMP DEFAULT SYSDATE
+    , STATUS CHAR(1) DEFAULT 'Y' CHECK(STATUS IN('Y', 'N'))
+);
+
+DROP SEQUENCE SEQ_BOARD_NO;
+CREATE SEQUENCE SEQ_BOARD_NO NOCACHE NOCYCLE;
+
+--외래키
+ALTER TABLE BOARD ADD CONSTRAINT BOARD_MEMBER_FK FOREIGN KEY(WRITER_NO) REFERENCES MEMBER;
+
+--더미 데이터
+INSERT INTO BOARD(NO, TITLE, CONTENT, WRITER_NO) --나머지는 DEFAULT 여서 안 씀
+VALUES(SEQ_BOARD_NO.NEXTVAL, '이건 제목', '안녕하세요 ㅎㅎ 여기는 내용~~', 1);
+COMMIT;
+
+---TEST 목적. 사용 후 지우기----------------
+SELECT
+    B.NO
+    , B.TITLE
+    , B.CONTENT
+    , B.WRITER_NO
+    , B.ENROLL_DATE
+    , B.MODIFY_DATE
+    , M.NICK
+FROM BOARD B
+JOIN MEMBER M ON B.WRITER_NO = M.NO
+WHERE B.NO = 3
+AND B.STATUS = 'Y'
+;
+
+
+
+
+
+
+
+
+
+
+

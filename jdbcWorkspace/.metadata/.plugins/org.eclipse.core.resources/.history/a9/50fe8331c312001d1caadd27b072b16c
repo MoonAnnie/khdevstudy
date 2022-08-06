@@ -1,0 +1,13 @@
+package com.kh;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("===== 쓰레드 =====");
+		
+		//방법1
+		
+
+	}
+
+}

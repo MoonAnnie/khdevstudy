@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.kh.util.inputUtil&apos; to &apos;InputUtil&apos;&#x0D;&#x0A;- Original project: &apos;jdbcPrj99mini&apos;&#x0D;&#x0A;- Original element: &apos;com.kh.util.inputUtil&apos;&#x0D;&#x0A;- Renamed element: &apos;com.kh.util.InputUtil&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;inputUtil&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.kh.util{inputUtil.java[inputUtil" matchStrategy="1" name="InputUtil" qualified="false" references="true" similarDeclarations="false" stamp="1658880804996" textual="false" version="1.0"/>
+</session>

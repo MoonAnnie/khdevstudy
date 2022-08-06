@@ -1,0 +1,23 @@
+package server;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		System.out.println("서버 실행 됨 ...");
+
+		//귀 만들기
+		ServerSocket ss = new ServerSocket();
+		
+		System.out.println("클라이언트의 연결 요청이 오기를 기다리는 중 ...");
+		
+		//ss.accept() : 귀로 들을 준비
+		Socket x = ss.accept(); 
+		
+		
+	}//main
+
+}//class
